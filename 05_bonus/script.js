@@ -9,10 +9,27 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function hello (str) {
+    
+    const date = new Date(); 
+    const hour = date.getHours(); 
+    let saluto ; 
 
+    if(hour <= 13) {
+        saluto = "Buongiorno";
+    }
+    else if ( hour <= 17) {
+        saluto ="Buon pomeriggio"
+    }
+    else {
+        saluto = "Buonasera";
+    }
+    return `${saluto} ${str}`; 
+
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(hello(name)); 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
