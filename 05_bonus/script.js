@@ -10,15 +10,15 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 function hello (str) {
-    
+
     const date = new Date(); 
     const hour = date.getHours(); 
     let saluto ; 
 
-    if(hour <= 13) {
+    if(hour < 13) {
         saluto = "Buongiorno";
     }
-    else if ( hour <= 17) {
+    else if ( hour < 17) {
         saluto ="Buon pomeriggio"
     }
     else {
